@@ -1,0 +1,57 @@
+.container{
+    /*max-width: 2.3rem;*/
+    /*padding:20px;*/
+    color: #227071;
+    display: grid;
+    width: 100%;
+    background-color:white;
+    box-shadow: 1px 1px 3px grey;
+}
+
+.widget-section-grid{
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+}
+.widget-container-title{
+    background-color: #185a71;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.widget-section{
+    grid-row: auto;
+    padding: 10px 5px 15px 20px;
+}
+
+.widget-section-name{
+    color: #0E821F;
+    text-align: left;
+    padding: 5px 5px 5px 3px;
+    font-weight: bold;
+}
+
+.widget-input{
+    border: #227071 2px solid;
+    padding:5px;
+    text-align: left;
+    color: grey;
+    margin-left: 3%;
+    border-radius: 5px;
+}
+.widget-input-container{
+    display:grid;
+    grid-template-rows: auto auto;
+}
+
+.widget-input-label{
+    font-size: 11px;
+    text-align: left;
+    padding:10px 10px 2px 4px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}

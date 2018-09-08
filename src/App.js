@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import WidgetPage from './pages/widgetPage';
 
 class App extends Component {
   render() {
@@ -9,9 +10,7 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Website Name</h1>
         </header>
-        <p className="App-intro">
-
-        </p>
+        <WidgetPage/>
       </div>
     );
   }
