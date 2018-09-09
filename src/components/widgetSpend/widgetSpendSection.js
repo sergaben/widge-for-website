@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../widgetContainer.css';
+import './widgetSpend.css';
 
 // TODO - add all the inputs and rest of elements to containers
 // TODO - think of a way to transfer the data to different elements
@@ -7,7 +7,6 @@ import '../widgetContainer.css';
 function widgetIncomeSection(props){
     return(
         <div className={props.nameOfClass}>
-            <div className="widget-section-name">{props.sectionName}</div>
             {props.children}
         </div>
     )

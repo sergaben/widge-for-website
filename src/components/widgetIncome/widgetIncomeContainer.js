@@ -8,7 +8,7 @@ import '../widgetContainer.css';
 function widgetIncomeContainer(props){
     return(
         <React.Fragment>
-            <header className="widget-container-title"> {props.title}</header>
+            <div className="widget-container-title"> {props.title}</div>
             <WidgetIncomeForm data={props.data}/>
         </React.Fragment>
     )

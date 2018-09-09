@@ -1,11 +1,19 @@
 .widget-page{
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50%;
+    padding:5%;
+    background-color: #efefef;
 }
 .widget-element{
     /*padding: 20px;*/
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 9% 95%;
+    background-color: white;
     max-width: 320px;
-    margin-left: 40%;
+    max-height: 452px;
     font-size: 15px;
-    grid-row: 1/4;
     border: #185a71 1px solid;
+    box-shadow: 3px 3px 2px grey;
 }

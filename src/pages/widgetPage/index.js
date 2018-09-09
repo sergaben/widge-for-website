@@ -10,10 +10,11 @@ class WidgetPage extends Component{
     }
 
     render(){
+
         return(
             <div className={"widget-page"}>
-                <div className={"widget-element"}><WidgetIncomeContainer title="YOUR INCOME & SPEND " data={this.state}/></div>
-                <div className={"widget-element"}><WidgetSpendContainer title="SPEND LESS" data={this.state}/></div>
+                <div className={"widget-element"} style={{marginLeft:"40%"}}><WidgetIncomeContainer title="YOUR INCOME & SPEND " data={this.state}/></div>
+                <div className={"widget-element"} ><WidgetSpendContainer title="SPEND LESS" data={this.state}/></div>
             </div>
         )
     }
