@@ -6,7 +6,6 @@
     background-color: #efefef;
 }
 .widget-element{
-    /*padding: 20px;*/
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 9% 95%;

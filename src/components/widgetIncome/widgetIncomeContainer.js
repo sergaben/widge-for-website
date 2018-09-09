@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import WidgetIncomeForm from './widgetIncomeForm';
-import '../widgetContainer.css';
+import './widgetIncome.css';
 
-// TODO - add all the inputs and rest of elements to containers
-// TODO - think of a way to transfer the data to different elements
 
 function widgetIncomeContainer(props){
     return(

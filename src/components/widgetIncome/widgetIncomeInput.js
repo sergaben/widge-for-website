@@ -1,5 +1,5 @@
 import React, { Component }from 'react';
-import '../widgetContainer.css'
+import './widgetIncome.css'
 
 class WidgetIncomeInput extends Component{
 

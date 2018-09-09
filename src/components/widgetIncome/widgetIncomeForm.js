@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import WidgetIncomeSection from './widgetIncomeSection';
 import WidgetIncomeInput from './widgetIncomeInput';
-import '../widgetContainer.css';
+import './widgetIncome.css';
 
-// TODO - add all the inputs and rest of elements to containers
-// TODO - think of a way to transfer the data to different elements
+
+
+// TODO - Disgusting global variables, get rid of them
 let counter = 0;
 let rowValue = 1;
+
 function getRandomNumber(){
     return Math.floor((Math.random() * 4000) + 1);
 }

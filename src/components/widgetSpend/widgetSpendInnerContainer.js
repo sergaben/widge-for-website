@@ -3,7 +3,6 @@ import './widgetSpend.css';
 import WidgetSpendSection from './widgetSpendSection';
 import WidgetSpendSlider from './widgetSpendSlider';
 import WidgetSpendFooter from './widgetSpendFooter';
-import WidgetIncomeInput from "../widgetIncome/widgetIncomeInput";
 
 function widgetSpendInnerContainer(props){
     return(

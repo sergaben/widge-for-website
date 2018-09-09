@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import '../widgetContainer.css';
+import './widgetIncome.css';
 
-// TODO - add all the inputs and rest of elements to containers
-// TODO - think of a way to transfer the data to different elements
 
 function widgetIncomeSection(props){
     return(
