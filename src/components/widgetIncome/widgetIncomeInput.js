@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import './widgetIncome.css'
+import './widgetIncome.css';
+import {connect} from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { incomeAction } from '../../actions';
 
 class WidgetIncomeInput extends Component {
 
@@ -11,14 +14,22 @@ class WidgetIncomeInput extends Component {
     }
 
     componentDidMount() {
+        // const value = localStorage.getItem(this.props.randomStorageValue) ? localStorage.getItem(this.props.randomStorageValue) : this.props.inputValue;
+        // this.setState({ value });
         const value = localStorage.getItem(this.props.randomStorageValue) ? localStorage.getItem(this.props.randomStorageValue) : this.props.inputValue;
         this.setState({ value });
+
+        this.props.incomeAction({name: this.props.expenditure, value});
     }
 
 
     onChange = (e) => {
         this.setState({ value: e.target.value }, () => {
+            if (this.props.expenditure) {
+                this.props.incomeAction({name: this.props.expenditure, value: this.state.value});
+            }
             localStorage.setItem(this.props.randomStorageValue, this.state.value)
+            // localStorage.setItem(this.props.randomStorageValue, this.state.value)
         });
     };
 
@@ -36,4 +47,6 @@ class WidgetIncomeInput extends Component {
     }
 }
 
-export default WidgetIncomeInput;
+const mapDispatchToProps = (dispatch) => bindActionCreators({ incomeAction }, dispatch);
+
+export default connect(null, mapDispatchToProps)(WidgetIncomeInput);
